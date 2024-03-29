@@ -158,7 +158,7 @@ Svec(:,34)=reshape (s12,[],1);Svec(:,35)=reshape (s13,[],1);Svec(:,36)=reshape (
 Evec(:,31)=reshape (e11,[],1);Evec(:,32)=reshape (e22,[],1);Evec(:,33)=reshape (e33,[],1);
 Evec(:,34)=reshape (e12,[],1);Evec(:,35)=reshape (e13,[],1);Evec(:,36)=reshape (e23,[],1);
 clear s11 s22 s33 s12 s13 s23 e11 e22 e33 e12 e13 e23
-% save ('Svec.mat','Svec')
-% save ('Evec.mat','Evec')
-% save ('iter.mat','iter')
-% save ('CH.mat','CH')
+save ('Svec.mat','Svec')
+save ('Evec.mat','Evec')
+save ('iter.mat','iter')
+save ('CH.mat','CH')
