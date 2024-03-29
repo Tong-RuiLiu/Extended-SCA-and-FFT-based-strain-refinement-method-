@@ -25,7 +25,9 @@ load('Matrix.mat'); % The element (Voxel) ID of matrix material
 load('ElementConnective.mat'); % Element connective matrix 
 load('NodeCoordinate.mat'); % Nodal coordinate of C3D8R voxel/element
 load('ORI.mat') % Orientation file of yarn material 
-load('gvector.mat') % Strain concentration tensor of each C3D8R voxel/element
+% Load strain concentration tensor of each C3D8R voxel/element
+load('A1.mat'); load('A2.mat'); load('A3.mat'); load('A4.mat'); load('A5.mat'); load('A6.mat');
+gvector = [A1 A2 A3 A4 A5 A6];
 % Later the YarnX is decomposed into Yarnxpos and Yarnxneg
 % Later the YarnY is decomposed into Yarnypos and Yarnyneg
 %% Define the vectors:Upper and Lower Coordinate,center of voxel mesh
